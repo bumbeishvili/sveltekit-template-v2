@@ -1,28 +1,31 @@
-# create-svelte
+# sveltekit-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Starter template built on the current stable stack:
 
-## Creating a project
+- [Svelte 5](https://svelte.dev/docs/svelte) (runes) + [SvelteKit 2](https://svelte.dev/docs/kit)
+- [Vite 6](https://vite.dev)
+- [Tailwind CSS 4](https://tailwindcss.com) (CSS-first config — no `tailwind.config.js`; theme lives in `src/app.css`)
+- TypeScript 5.9, ESLint 9 (flat config), Prettier 3
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Requires **Node 20.19+**. Deploys to Vercel, Netlify, and other supported platforms out of the box via [`@sveltejs/adapter-auto`](https://svelte.dev/docs/kit/adapter-auto).
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `npm install`, then start a development server (port 3002):
 
 ```bash
 npm run dev
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
+```
+
+## Checks
+
+```bash
+npm run check   # svelte-check (types)
+npm run lint    # prettier + eslint
+npm run format  # prettier --write
 ```
 
 ## Building
@@ -35,4 +38,4 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

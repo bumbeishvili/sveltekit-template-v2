@@ -1,16 +1,18 @@
 <script>
 	import Header from '$lib/Header.svelte';
+	import Meta from '$lib/Meta.svelte';
+	import Footer from '$lib/Footer.svelte';
 	import './styles.css';
 	import '../app.css';
-	import Meta from "$lib/Meta.svelte";
-	import Footer from '$lib//Footer.svelte';
+
+	let { children } = $props();
 </script>
 
 <div class="app">
 	<Header />
 	<Meta />
-	<main class='w-full'>
-		<slot />
+	<main class="w-full">
+		{@render children()}
 	</main>
 	<Footer />
 </div>
