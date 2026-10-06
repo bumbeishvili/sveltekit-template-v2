@@ -7,7 +7,7 @@ Starter template built on the current stable stack:
 - [Tailwind CSS 4](https://tailwindcss.com) (CSS-first config — no `tailwind.config.js`; theme lives in `src/app.css`)
 - TypeScript 5.9, ESLint 9 (flat config), Prettier 3
 
-Requires **Node 20.19+**. Deploys to Vercel, Netlify, and other supported platforms out of the box via [`@sveltejs/adapter-auto`](https://svelte.dev/docs/kit/adapter-auto).
+Requires **Node 24**. Deploys to Vercel, Netlify, and other supported platforms out of the box via [`@sveltejs/adapter-auto`](https://svelte.dev/docs/kit/adapter-auto).
 
 ## Developing
 
